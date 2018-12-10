@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.video.tstream" name="Torrent Stream" version="0.1" provider-name="ike">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="main.py">
+		<provides>video</provides>
+	</extension>
+    <extension point="xbmc.python.module" library="resources/lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Torrent streaming plugin</summary>
+		<description lang="en">Torrent streaming plugin</description>
+		<platform>all</platform>
+		<language>en</language>
+	</extension>
+</addon>
+
+<addon id="repository.ike" name="iKe kodi addons repository" version="0.1" provider-name="iKe">
+	<extension point="xbmc.addon.repository" name="iKe addon repository">
+		<info compressed="false">https://raw.githubusercontent.com/mikelsantos/kodi/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/mikelsantos/kodi/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/mikelsantos/kodi/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>iKe kodi addons repository</summary>
+   		<description lang="en">iKe kodi addons repository</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="script.tstream.newpct1" name="NewPCT1 Provider" version="0.1" provider-name="ike">
 	<requires>
 		<import addon="xbmc.python" version="2.12.0"/>
