@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.tstream" name="Torrent Stream" version="0.1" provider-name="ike">
+<addon id="plugin.video.tstream" name="Torrent Stream" version="0.2" provider-name="ike">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
