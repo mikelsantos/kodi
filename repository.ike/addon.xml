@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.ike" name="iKe kodi addons repository" version="0.1" provider-name="iKe">
+<addon id="repository.ike" name="iKe kodi addons repository" version="0.2" provider-name="iKe">
 	<extension point="xbmc.addon.repository" name="iKe addon repository">
 		<info compressed="false">https://raw.githubusercontent.com/mikelsantos/kodi/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/mikelsantos/kodi/master/addons.xml.md5</checksum>
