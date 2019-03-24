@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="General">
+        <setting label="Server address:" type="text" id="torrent_server_address" default="http://localhost:8080"/>
+        <setting label="Buffering" type="slider" id="buffer_percent" default="1" range="0,1,100" option="int" />
+        <setting label="Temp directory:" type="folder" id="temp_dir_path" default=""/>        
+        <setting label="Move directory:" type="folder" id="move_dir_path" default=""/>
+        <setting label="Cleanup at start:" type="bool" id="cleanup" default="true"/>
+        <setting label="Text encoding:" type="text" id="text_encoding" default="utf-8"/>
+        <setting label="Use native engine:" type="bool" id="use_native_engine" default="false"/>
+        <setting label="NodeJS binary:" type="executable" id="node_binary_path" default=""/>
+    </category>
+	<category label="Torrent">
+        <setting label="DHT_DEFAULT_PORT" type="number" id="DHT_DEFAULT_PORT" default="55555"/>
+        <setting label="DHT_MAX_NODES" type="number" id="DHT_MAX_NODES" default="2048"/>
+        <setting label="DHT_REBOOT_TIME" type="number" id="DHT_REBOOT_TIME" default="20"/>
+        <setting label="DHT_RESET_CONNECTION" type="number" id="DHT_RESET_CONNECTION" default="2048"/>
+        <setting label="MIN_ACTIVE_PEERS" type="number" id="MIN_ACTIVE_PEERS" default="8"/>
+        <setting label="MAX_ACTIVE_PEERS" type="number" id="MAX_ACTIVE_PEERS" default="32"/>
+        <setting label="MIN_DOWNLOAD_SPEED" type="number" id="MIN_DOWNLOAD_SPEED" default="100"/>
+        <setting label="MAX_PEER_REQUESTS" type="number" id="MAX_PEER_REQUESTS" default="8"/>        
+        <setting label="MAX_STARTED_PEERS" type="number" id="MAX_STARTED_PEERS" default="128"/>
+        <setting label="PEER_CONNECT_TIMEOUT" type="number" id="PEER_CONNECT_TIMEOUT" default="10"/>
+        <setting label="PEER_HANDSHAKE_TIMEOUT" type="number" id="PEER_HANDSHAKE_TIMEOUT" default="10"/>
+        <setting label="PEER_MESSAGE_TIMEOUT" type="number" id="PEER_MESSAGE_TIMEOUT" default="10"/>
+        <setting label="PEER_REQUEST_TIMEOUT" type="number" id="PEER_REQUEST_TIMEOUT" default="2"/>
+        <setting label="PEER_SPEED_THRESHOLD" type="number" id="PEER_SPEED_THRESHOLD" default="49152"/>
+        <setting label="RECV_BUFFER_SIZE" type="number" id="RECV_BUFFER_SIZE" default="4096"/>
+        <setting label="SEND_BUFFER_SIZE" type="number" id="SEND_BUFFER_SIZE" default="4096"/>
+        <setting label="STREAM_BUFFER_PIECES" type="number" id="STREAM_BUFFER_PIECES" default="4"/>
+    </category>
+</settings>
