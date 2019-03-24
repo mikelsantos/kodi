@@ -16,7 +16,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.ike" name="iKe kodi addons repository" version="0.3" provider-name="iKe">
+<addon id="repository.ike" name="iKe kodi addons repository" version="0.4" provider-name="iKe">
 	<extension point="xbmc.addon.repository" name="iKe addon repository">
 		<info compressed="false">https://raw.githubusercontent.com/mikelsantos/kodi/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/mikelsantos/kodi/master/addons.xml.md5</checksum>
@@ -30,7 +30,7 @@
 	</extension>
 </addon>
 
-<addon id="script.tstream.newpct1" name="NewPCT1 Provider" version="0.3" provider-name="ike">
+<addon id="script.tstream.newpct1" name="NewPCT1 Provider" version="0.4" provider-name="ike">
 	<requires>
 		<import addon="xbmc.python" version="2.12.0"/>
 		<import addon="plugin.video.tstream" version="0.1"/>
@@ -41,6 +41,22 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">NewPCT1 Provider</summary>
 		<description lang="en">NewPCT1 Provider</description>
+		<language></language>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.tstream.zonatorrent" name="ZonaTorrent Provider" version="0.1" provider-name="ike">
+	<requires>
+		<import addon="xbmc.python" version="2.12.0"/>
+		<import addon="plugin.video.tstream" version="0.1"/>
+	</requires>
+	<extension point="xbmc.python.script" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">ZonaTorrent Provider</summary>
+		<description lang="en">ZonaTorrent Provider</description>
 		<language></language>
 		<platform>all</platform>
 	</extension>
